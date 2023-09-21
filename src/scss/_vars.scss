@@ -9,6 +9,15 @@
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
 
+
+  @include small-tablet {
+    --container-offset: 30px;
+  }
+
+  @include mobile {
+    --container-offset: 15px;
+  }
+
   // colors
   --light: #fff;
   --dark: #101010;
