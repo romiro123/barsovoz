@@ -5,11 +5,19 @@
     &--big {
       grid-template-columns: repeat(3, 1fr);
       gap: 25px;
+
+      @include small-tablet {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     &--small {
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
+
+      @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
 
@@ -19,15 +27,8 @@
   }
 
   &__img-wrapp {
-    // display: flex;
-    // height: 225px;
     margin-bottom: 20px;
   }
-
-  // &__img {
-  //   max-height: 100%;
-  //   margin: auto 0;
-  // }
 
   &__title {
     margin-bottom: 10px;
