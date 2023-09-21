@@ -3,13 +3,26 @@
   color: var(--light);
 
   &__content {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     padding-top: 50px;
     padding-bottom: 50px;
+
+    @include mobile {
+      gap: 40px 10px;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
-  &__menu {}
+  &__menu {
+    &:not(:last-child) {
+      // margin-right: 35px;
+
+      @include mobile {
+        // margin-bottom: 20px;
+      }
+    }
+  }
 
   &__title {
     margin: 0 0 30px 0;
@@ -52,10 +65,25 @@
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 50px;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 
   &__list {
     display: flex;
+
+    @include tablet {
+      justify-content: center;
+    }
+
+    @include mobile {
+      justify-content: start;
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 
   &__item:not(:last-child) {
