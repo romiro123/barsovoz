@@ -1,0 +1,28 @@
+.link {
+  display: inline-block;
+
+  &--flex {
+    display: flex;
+    align-items: center;
+  }
+
+  &--btn {
+    border-radius: 32px;
+    padding: 10px 32px;
+  }
+
+  &--dark {
+    background-color: var(--dark);
+    color: var(--light);
+  }
+
+  &--light {
+    color: var(--light);
+  }
+
+  &--accent {
+    background-color: var(--accent);
+    color: var(--light);
+  }
+
+}

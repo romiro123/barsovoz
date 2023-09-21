@@ -1,0 +1,29 @@
+.counts {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--main-dark);
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__num {
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--accent);
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

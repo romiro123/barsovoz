@@ -1,0 +1,40 @@
+.form {
+  &-search {
+    position: relative;
+    width: 60%;
+
+    &__input {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid var(--accent);
+      padding: 10px 0 10px 32px;
+
+      &::placeholder {
+        color: var(--dark-grey);
+        font-weight: 500;
+      }
+    }
+
+    &__btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      color: var(--light);
+      background-color: var(--accent);
+      border-radius: 8px;
+      padding: 0 25px;
+      height: 100%;
+    }
+
+    &__btn-text {
+      margin-right: 8px;
+    }
+
+    &__btn-icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

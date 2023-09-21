@@ -1,0 +1,32 @@
+.title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+
+  &--small {
+    font-style: 14px;
+  }
+
+  &--medium {
+    font-size: 18px;
+  }
+
+  &--large {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &--xl {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  &--light {
+    color: var(--light);
+  }
+
+  &--accent {
+    color: var(--accent);
+  }
+
+}

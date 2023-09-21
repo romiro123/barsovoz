@@ -1,0 +1,22 @@
+.ads {
+  margin-bottom: 50px;
+
+  &__top {
+    background-color: var(--accent);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+  }
+
+  &__top-wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {}
+
+  &__link {
+    text-decoration: underline;
+  }
+}

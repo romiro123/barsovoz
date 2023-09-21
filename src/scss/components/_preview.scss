@@ -1,0 +1,65 @@
+.preview {
+  &__list {
+    display: grid;
+
+    &--big {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    &--small {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    margin-bottom: 10px;
+  }
+
+  &__wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__geo {
+    display: flex;
+    flex-direction: column;
+    color: var(--dark-grey);
+  }
+
+  &__city {
+    margin-bottom: 5px;
+  }
+
+  &__time {}
+
+  &__btn {
+    display: flex;
+
+    &:hover .preview__like {
+      fill: var(--heart);
+    }
+  }
+
+  &__like {
+    fill: transparent;
+    width: 30px;
+    height: 30px;
+    transition: fill .3s ease;
+  }
+}
