@@ -4,7 +4,7 @@
   font-size: 16px;
 
   &--small {
-    font-style: 14px;
+    font-size: 14px;
   }
 
   &--medium {
@@ -27,6 +27,11 @@
 
   &--accent {
     color: var(--accent);
+  }
+
+  &--underline {
+    color: var(--dark-grey);
+    text-decoration: underline;
   }
 
 }

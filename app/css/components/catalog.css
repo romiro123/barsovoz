@@ -1,0 +1,21 @@
+.catalog__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+.catalog__filter {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/span 1;
+}
+.catalog__products {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/span 4;
+}
+.catalog__preview {
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=catalog.css.map */

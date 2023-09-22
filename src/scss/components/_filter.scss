@@ -1,0 +1,54 @@
+.filter {
+  @include small-tablet {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    overflow: auto;
+    transform: translateX(-135%);
+    transition: transform .3s ease;
+    margin: 50px 0;
+  }
+
+  &--open-js {
+    transform: translateX(calc(0% - var(--container-offset)));
+  }
+
+  &--burger-icon {
+    width: 10px;
+    height: 10px;
+  }
+
+  &__categories {
+    background-color: var(--main-dark);
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  &__categories-item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    font-weight: 500;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+}

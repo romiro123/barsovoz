@@ -1,0 +1,23 @@
+.catalog {
+  &__container {}
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+
+  &__filter {
+    grid-column: 1/span 1;
+  }
+
+  &__products {
+    grid-column: 2/span 4;
+  }
+
+  &__info {}
+
+  &__preview {
+    margin-bottom: 50px;
+  }
+}

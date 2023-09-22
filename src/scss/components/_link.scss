@@ -6,6 +6,11 @@
     align-items: center;
   }
 
+  &--inline-flex {
+    display: inline-flex;
+    align-items: center;
+  }
+
   &--btn {
     border-radius: 32px;
     padding: 10px 32px;
