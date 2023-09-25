@@ -16,6 +16,11 @@
     padding: 10px 32px;
   }
 
+  &--btn-big {
+    border-radius: 32px;
+    padding: 18px 48px;
+  }
+
   &--dark {
     background-color: var(--dark);
     color: var(--light);
@@ -28,6 +33,10 @@
   &--accent {
     background-color: var(--accent);
     color: var(--light);
+  }
+
+  &--underline {
+    text-decoration: underline;
   }
 
 }

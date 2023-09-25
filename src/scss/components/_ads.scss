@@ -15,8 +15,46 @@
   }
 
   &__title {}
+}
+
+.ads-add {
+  margin-bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--accent);
+
+  &__wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include small-tablet {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__content {
+    max-width: 600px;
+    margin-right: 20px;
+
+    @include tablet {
+      max-width: 500px;
+    }
+
+    @include small-tablet {
+      max-width: 100%;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    color: var(--light);
+    margin: 15px 0 0 0;
+  }
 
   &__link {
-    text-decoration: underline;
+    flex-shrink: 0;
   }
 }

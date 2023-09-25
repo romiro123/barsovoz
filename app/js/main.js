@@ -154,13 +154,13 @@ __webpack_require__.r(__webpack_exports__);
   \*********************************/
 /***/ (() => {
 
-const filterBtn = document.querySelector('.filter-open');
+const filterBtn = document.querySelector('.filter__open-btn');
 const filter = document.querySelector('.filter');
 filterBtn.addEventListener('click', () => {
   filter.classList.toggle('filter--open-js');
 });
 document.addEventListener('click', function (event) {
-  if (event.target.closest('.filter-open') == null && event.target.closest('.filter') == null) {
+  if (event.target.closest('.filter__open-btn') == null && event.target.closest('.filter') == null) {
     filter.classList.remove('filter--open-js');
   }
 });
