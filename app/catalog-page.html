@@ -59,59 +59,62 @@
       </svg>
     </a>
 
-    <!-- <button class="burger btn-reset" aria-label="Открыть меню" aria-expanded="false" data-burger>
+    <button class="burger btn-reset" aria-label="Открыть меню" aria-expanded="false" data-burger>
       <span class="burger__icon">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
       </span>
-    </button> -->
+    </button>
 
-    <!-- <div class="header__menu menu" data-menu> -->
-    <div class="header__menu">
-      <ul class="list-reset header__list">
-        <li class="header__item">
-          <a href="#" class=" link">
-            <svg class="header__svg">
-              <use xlink:href="img/sprite.svg#heart"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="header__item">
-          <a href="#" class=" link">
-            <svg class="header__svg">
-              <use xlink:href="img/sprite.svg#bell"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="header__item">
-          <a href="#" class=" link">
-            <svg class="header__svg">
-              <use xlink:href="img/sprite.svg#chat"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="header__item">
-          <a href="#" class="link link--flex">
-            <svg class="header__svg">
-              <use xlink:href="img/sprite.svg#user"></use>
-            </svg>
-            <span>Вход и регистрация</span>
-          </a>
-        </li>
-        <li class="header__item">
-          <a href="#" class="link link--btn link--dark">Разместить объявление</a>
-        </li>
-        <li class="header__item">
-          <a href="#" class="">
-            <svg class="header__svg">
-              <use xlink:href="img/sprite.svg#world"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+    <div class="header__menu menu" data-menu>
+      <div class="header__menu">
+        <ul class="list-reset header__list">
+          <li class="header__item">
+            <a href="#" class=" link link--flex">
+              <svg class="header__svg">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+              <span class="header__content-adaptive">Избранное</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class=" link link--flex">
+              <svg class="header__svg">
+                <use xlink:href="img/sprite.svg#bell"></use>
+              </svg>
+              <span class="header__content-adaptive">Уведомления</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class=" link link--flex">
+              <svg class="header__svg">
+                <use xlink:href="img/sprite.svg#chat"></use>
+              </svg>
+              <span class="header__content-adaptive">Чат</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="link link--flex">
+              <svg class="header__svg">
+                <use xlink:href="img/sprite.svg#user"></use>
+              </svg>
+              <span>Вход и регистрация</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="link link--btn link--dark">Разместить объявление</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="">
+              <svg class="header__svg">
+                <use xlink:href="img/sprite.svg#world"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
 </header>
     <main class="main">
       <section class="search">
@@ -287,7 +290,73 @@
           <ul class="list-reset preview__list preview__list--big">
             <li class="preview__card">
               <div class="preview__img-wrapp">
+                <img class="preview__img img img--preview" src="img/preview/preview-car.jpg" alt="car">
+              </div>
+              <h4 class="preview__title title title--large title--accent">Автомобиль KIA RIO, 1.6 AT, 2019, 62
+                000 км
+              </h4>
+              <span class="preview__price price">1 672 400 ₽</span>
+              <div class="preview__wrapp">
+                <div class="preview__geo">
+                  <span class="preview__city">Казань, Горки</span>
+                  <span class="preview__time">21:32</span>
+                </div>
+                <button class="preview__btn btn-reset">
+                  <svg class="preview__like">
+                    <path
+                      d="M13.1961 24.5476L13.1946 24.5462C9.40345 21.1084 6.33722 18.3222 4.20709 15.7161C2.08795 13.1235 1.00003 10.8316 1.00003 8.3995C1.00003 4.42718 4.0956 1.34387 8.05566 1.34387C10.3019 1.34387 12.4743 2.39471 13.8878 4.04165L14.6466 4.9258L15.4055 4.04165C16.819 2.39471 18.9914 1.34387 21.2376 1.34387C25.1977 1.34387 28.2932 4.42718 28.2932 8.3995C28.2932 10.8316 27.2053 13.1235 25.0862 15.7161C22.956 18.3222 19.8898 21.1084 16.0986 24.5462L16.0972 24.5476L14.6466 25.8681L13.1961 24.5476Z"
+                      stroke="#FF4848" stroke-width="2"></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="preview__card">
+              <div class="preview__img-wrapp">
+                <img class="preview__img img img--preview" src="img/preview/preview-car1.jpg" alt="car">
+              </div>
+              <h4 class="preview__title title title--large title--accent">Автомобиль KIA RIO, 1.6 AT, 2019, 62
+                000 км
+              </h4>
+              <span class="preview__price price">1 672 400 ₽</span>
+              <div class="preview__wrapp">
+                <div class="preview__geo">
+                  <span class="preview__city">Казань, Горки</span>
+                  <span class="preview__time">21:32</span>
+                </div>
+                <button class="preview__btn btn-reset">
+                  <svg class="preview__like">
+                    <path
+                      d="M13.1961 24.5476L13.1946 24.5462C9.40345 21.1084 6.33722 18.3222 4.20709 15.7161C2.08795 13.1235 1.00003 10.8316 1.00003 8.3995C1.00003 4.42718 4.0956 1.34387 8.05566 1.34387C10.3019 1.34387 12.4743 2.39471 13.8878 4.04165L14.6466 4.9258L15.4055 4.04165C16.819 2.39471 18.9914 1.34387 21.2376 1.34387C25.1977 1.34387 28.2932 4.42718 28.2932 8.3995C28.2932 10.8316 27.2053 13.1235 25.0862 15.7161C22.956 18.3222 19.8898 21.1084 16.0986 24.5462L16.0972 24.5476L14.6466 25.8681L13.1961 24.5476Z"
+                      stroke="#FF4848" stroke-width="2"></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="preview__card">
+              <div class="preview__img-wrapp">
                 <img class="preview__img img img--preview" src="img/preview/preview-car2.jpg" alt="car">
+              </div>
+              <h4 class="preview__title title title--large title--accent">Автомобиль KIA RIO, 1.6 AT, 2019, 62
+                000 км
+              </h4>
+              <span class="preview__price price">1 672 400 ₽</span>
+              <div class="preview__wrapp">
+                <div class="preview__geo">
+                  <span class="preview__city">Казань, Горки</span>
+                  <span class="preview__time">21:32</span>
+                </div>
+                <button class="preview__btn btn-reset">
+                  <svg class="preview__like">
+                    <path
+                      d="M13.1961 24.5476L13.1946 24.5462C9.40345 21.1084 6.33722 18.3222 4.20709 15.7161C2.08795 13.1235 1.00003 10.8316 1.00003 8.3995C1.00003 4.42718 4.0956 1.34387 8.05566 1.34387C10.3019 1.34387 12.4743 2.39471 13.8878 4.04165L14.6466 4.9258L15.4055 4.04165C16.819 2.39471 18.9914 1.34387 21.2376 1.34387C25.1977 1.34387 28.2932 4.42718 28.2932 8.3995C28.2932 10.8316 27.2053 13.1235 25.0862 15.7161C22.956 18.3222 19.8898 21.1084 16.0986 24.5462L16.0972 24.5476L14.6466 25.8681L13.1961 24.5476Z"
+                      stroke="#FF4848" stroke-width="2"></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="preview__card">
+              <div class="preview__img-wrapp">
+                <img class="preview__img img img--preview" src="img/preview/preview-car3.jpg" alt="car">
               </div>
               <h4 class="preview__title title title--large title--accent">Автомобиль KIA RIO, 1.6 AT, 2019, 62
                 000 км
@@ -353,7 +422,7 @@
             </li>
             <li class="preview__card">
               <div class="preview__img-wrapp">
-                <img class="preview__img img img--preview" src="img/preview/preview-car2.jpg" alt="car">
+                <img class="preview__img img img--preview" src="img/preview/preview-car.jpg" alt="car">
               </div>
               <h4 class="preview__title title title--large title--accent">Автомобиль KIA RIO, 1.6 AT, 2019, 62
                 000 км
@@ -375,7 +444,7 @@
             </li>
             <li class="preview__card">
               <div class="preview__img-wrapp">
-                <img class="preview__img img img--preview" src="img/preview/preview-car2.jpg" alt="car">
+                <img class="preview__img img img--preview" src="img/preview/preview-car1.jpg" alt="car">
               </div>
               <h4 class="preview__title title title--large title--accent">Автомобиль KIA RIO, 1.6 AT, 2019, 62
                 000 км
@@ -397,7 +466,7 @@
             </li>
             <li class="preview__card">
               <div class="preview__img-wrapp">
-                <img class="preview__img img img--preview" src="img/preview/preview-car2.jpg" alt="car">
+                <img class="preview__img img img--preview" src="img/preview/preview-car3.jpg" alt="car">
               </div>
               <h4 class="preview__title title title--large title--accent">Автомобиль KIA RIO, 1.6 AT, 2019, 62
                 000 км
@@ -419,7 +488,7 @@
             </li>
             <li class="preview__card">
               <div class="preview__img-wrapp">
-                <img class="preview__img img img--preview" src="img/preview/preview-car2.jpg" alt="car">
+                <img class="preview__img img img--preview" src="img/preview/preview-car3.jpg" alt="car">
               </div>
               <h4 class="preview__title title title--large title--accent">Автомобиль KIA RIO, 1.6 AT, 2019, 62
                 000 км
@@ -441,7 +510,7 @@
             </li>
             <li class="preview__card">
               <div class="preview__img-wrapp">
-                <img class="preview__img img img--preview" src="img/preview/preview-car2.jpg" alt="car">
+                <img class="preview__img img img--preview" src="img/preview/preview-car1.jpg" alt="car">
               </div>
               <h4 class="preview__title title title--large title--accent">Автомобиль KIA RIO, 1.6 AT, 2019, 62
                 000 км
@@ -463,73 +532,7 @@
             </li>
             <li class="preview__card">
               <div class="preview__img-wrapp">
-                <img class="preview__img img img--preview" src="img/preview/preview-car2.jpg" alt="car">
-              </div>
-              <h4 class="preview__title title title--large title--accent">Автомобиль KIA RIO, 1.6 AT, 2019, 62
-                000 км
-              </h4>
-              <span class="preview__price price">1 672 400 ₽</span>
-              <div class="preview__wrapp">
-                <div class="preview__geo">
-                  <span class="preview__city">Казань, Горки</span>
-                  <span class="preview__time">21:32</span>
-                </div>
-                <button class="preview__btn btn-reset">
-                  <svg class="preview__like">
-                    <path
-                      d="M13.1961 24.5476L13.1946 24.5462C9.40345 21.1084 6.33722 18.3222 4.20709 15.7161C2.08795 13.1235 1.00003 10.8316 1.00003 8.3995C1.00003 4.42718 4.0956 1.34387 8.05566 1.34387C10.3019 1.34387 12.4743 2.39471 13.8878 4.04165L14.6466 4.9258L15.4055 4.04165C16.819 2.39471 18.9914 1.34387 21.2376 1.34387C25.1977 1.34387 28.2932 4.42718 28.2932 8.3995C28.2932 10.8316 27.2053 13.1235 25.0862 15.7161C22.956 18.3222 19.8898 21.1084 16.0986 24.5462L16.0972 24.5476L14.6466 25.8681L13.1961 24.5476Z"
-                      stroke="#FF4848" stroke-width="2"></path>
-                  </svg>
-                </button>
-              </div>
-            </li>
-            <li class="preview__card">
-              <div class="preview__img-wrapp">
-                <img class="preview__img img img--preview" src="img/preview/preview-car2.jpg" alt="car">
-              </div>
-              <h4 class="preview__title title title--large title--accent">Автомобиль KIA RIO, 1.6 AT, 2019, 62
-                000 км
-              </h4>
-              <span class="preview__price price">1 672 400 ₽</span>
-              <div class="preview__wrapp">
-                <div class="preview__geo">
-                  <span class="preview__city">Казань, Горки</span>
-                  <span class="preview__time">21:32</span>
-                </div>
-                <button class="preview__btn btn-reset">
-                  <svg class="preview__like">
-                    <path
-                      d="M13.1961 24.5476L13.1946 24.5462C9.40345 21.1084 6.33722 18.3222 4.20709 15.7161C2.08795 13.1235 1.00003 10.8316 1.00003 8.3995C1.00003 4.42718 4.0956 1.34387 8.05566 1.34387C10.3019 1.34387 12.4743 2.39471 13.8878 4.04165L14.6466 4.9258L15.4055 4.04165C16.819 2.39471 18.9914 1.34387 21.2376 1.34387C25.1977 1.34387 28.2932 4.42718 28.2932 8.3995C28.2932 10.8316 27.2053 13.1235 25.0862 15.7161C22.956 18.3222 19.8898 21.1084 16.0986 24.5462L16.0972 24.5476L14.6466 25.8681L13.1961 24.5476Z"
-                      stroke="#FF4848" stroke-width="2"></path>
-                  </svg>
-                </button>
-              </div>
-            </li>
-            <li class="preview__card">
-              <div class="preview__img-wrapp">
-                <img class="preview__img img img--preview" src="img/preview/preview-car2.jpg" alt="car">
-              </div>
-              <h4 class="preview__title title title--large title--accent">Автомобиль KIA RIO, 1.6 AT, 2019, 62
-                000 км
-              </h4>
-              <span class="preview__price price">1 672 400 ₽</span>
-              <div class="preview__wrapp">
-                <div class="preview__geo">
-                  <span class="preview__city">Казань, Горки</span>
-                  <span class="preview__time">21:32</span>
-                </div>
-                <button class="preview__btn btn-reset">
-                  <svg class="preview__like">
-                    <path
-                      d="M13.1961 24.5476L13.1946 24.5462C9.40345 21.1084 6.33722 18.3222 4.20709 15.7161C2.08795 13.1235 1.00003 10.8316 1.00003 8.3995C1.00003 4.42718 4.0956 1.34387 8.05566 1.34387C10.3019 1.34387 12.4743 2.39471 13.8878 4.04165L14.6466 4.9258L15.4055 4.04165C16.819 2.39471 18.9914 1.34387 21.2376 1.34387C25.1977 1.34387 28.2932 4.42718 28.2932 8.3995C28.2932 10.8316 27.2053 13.1235 25.0862 15.7161C22.956 18.3222 19.8898 21.1084 16.0986 24.5462L16.0972 24.5476L14.6466 25.8681L13.1961 24.5476Z"
-                      stroke="#FF4848" stroke-width="2"></path>
-                  </svg>
-                </button>
-              </div>
-            </li>
-            <li class="preview__card">
-              <div class="preview__img-wrapp">
-                <img class="preview__img img img--preview" src="img/preview/preview-car2.jpg" alt="car">
+                <img class="preview__img img img--preview" src="img/preview/preview-car.jpg" alt="car">
               </div>
               <h4 class="preview__title title title--large title--accent">Автомобиль KIA RIO, 1.6 AT, 2019, 62
                 000 км
@@ -567,14 +570,12 @@
   </div>
 </section>
       <section class="ads-add">
-
   <div class="ads-add__wrapp container">
     <div class="ads-add__content">
       <h3 class="title title--light title--xl">Разместите объявление</h3>
       <p class="ads-add__subtitle">И начните продавать или продвигать свои услуги вместе с Барсовоз</p>
     </div>
     <a href="#" class="ads-add__link link link--btn-big link--dark">Разместить объявление</a>
-
   </div>
 </section>
     </main>

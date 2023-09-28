@@ -1,13 +1,13 @@
 .filter {
   @include small-tablet {
-    position: fixed;
-    top: 0;
-    height: 100%;
+    position: absolute;
+    top: 10;
+    max-height: 500px;
     width: 50%;
     overflow: auto;
     transform: translateX(-135%);
     transition: transform .3s ease;
-    margin: 25px 0;
+    // margin: 25px 0;
   }
 
   &--open-js {
@@ -50,11 +50,16 @@
   }
 
   &__open-btn {
-    display: flex;
+    display: none;
+
     align-items: center;
     padding: 5px;
     border: 1px solid var(--accent);
     border-radius: 8px;
+
+    @include small-tablet {
+      display: flex;
+    }
   }
 
   &__open-btn-icon {

@@ -13,7 +13,10 @@
     display: flex;
     align-items: center;
 
-    @include tablet {}
+    @include tablet {
+      flex-direction: column;
+      align-items: start;
+    }
   }
 
   &__item {
@@ -21,12 +24,24 @@
   }
 
   &__item:not(:last-child) {
-    margin-right: 20px;
+    margin: 0 20px 0 0;
+
+    @include tablet {
+      margin: 0 0 15px 0;
+    }
   }
 
   &__svg {
     padding: 10px;
     width: 42px;
     height: 42px;
+  }
+
+  &__content-adaptive {
+    display: none;
+
+    @include tablet {
+      display: inline-block;
+    }
   }
 }

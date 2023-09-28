@@ -217,7 +217,7 @@
       height: 3px;
       position: relative;
       right: 0px;
-      background-color: var(--light);
+      background-color: var(--accent);
       transition: 0.3s ease-in-out;
     }
   }
@@ -225,7 +225,7 @@
   &--active {
     & .line {
       width: 100%;
-      background-color: var(--light);
+      background-color: var(--accent);
 
       &:nth-child(1) {
         width: 100%;
@@ -249,16 +249,17 @@
 .menu {
   @include tablet {
     position: fixed;
-    top: 90px;
+    top: 78px;
     z-index: 10;
     left: 0;
     width: 100%;
-    height: calc(100vh - 90px);
-    background-color: var(--dark);
+    height: calc(100vh - 78px);
+    background-color: var(--main-dark);
     overflow-y: auto;
     opacity: 0;
     visibility: hidden;
     transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+    padding: 20px var(--container-offset);
   }
 
   &--active {

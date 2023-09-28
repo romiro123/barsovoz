@@ -1,8 +1,8 @@
 // базовые подключения
 @import "mixins";
-@import "fonts";
 @import "settings";
 @import "vars";
+@import "fonts";
 
 // подключения компонентов страницы
 @import "./components/link";
@@ -22,6 +22,9 @@
 @import "./components/ads";
 @import "./components/counts";
 @import "./components/catalog";
+@import "./components/message-avtorization";
+@import "./components/path";
+@import "./components/product";
 
 
 @import "./components/footer";

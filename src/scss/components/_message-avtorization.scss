@@ -1,0 +1,14 @@
+.message-avtorization {
+  margin-bottom: 50px;
+
+  &__content {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--dark-grey);
+  }
+
+  &__link {
+    color: var(--accent);
+  }
+}

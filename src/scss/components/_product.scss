@@ -1,0 +1,151 @@
+.product {
+  margin-bottom: 100px;
+
+  &__container {}
+
+  &__header {}
+
+  &__header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__verification {
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    color: var(--light);
+    background-color: var(--accent);
+    padding: 10px 22px;
+    border-radius: 8px;
+  }
+
+  &__header-bottom {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  &__header-bottom-desc {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  &__content {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__img {
+    height: 500px;
+    background-color: var(--dark-grey);
+  }
+
+  &__info {}
+
+  &__info-wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__price-wrapp {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__price {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  &__like {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: var(--dark);
+    padding: 10px 15px;
+  }
+
+  &__like-content {
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--light);
+    max-width: 150px;
+  }
+
+  &__characteristic {}
+
+  &__description {
+    grid-column: 1/span 2;
+  }
+
+  &__map {
+    grid-column: 1/span 2;
+    height: 350px;
+    background-color: var(--dark-grey);
+  }
+
+  &__bottom {
+    grid-column: 1/span 2;
+  }
+
+  &__list {}
+
+  &__item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__key {
+    flex-shrink: 0;
+    width: 175px;
+    margin-right: 20px;
+  }
+
+  &__value {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dark-grey);
+  }
+
+  &__bottom-link {
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+
+  &--check {
+    padding: 5px;
+  }
+
+  &--clock {
+    margin-right: 5px;
+  }
+
+  &--eye {
+    margin-right: 5px;
+  }
+
+  &--heart {
+    margin-left: 15px;
+  }
+
+}
