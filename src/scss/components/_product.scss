@@ -10,10 +10,20 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 0 10px 0;
+
+    @include tablet {
+      flex-direction: column-reverse;
+      align-items: start;
+      gap: 10px;
+    }
   }
 
   &__title {
     margin-bottom: 25px;
+
+    @include small-tablet {
+      margin-bottom: 15px;
+    }
   }
 
   &__verification {
@@ -24,6 +34,11 @@
     background-color: var(--accent);
     padding: 10px 22px;
     border-radius: 8px;
+
+    @include tablet {
+      margin: 0 0 0 auto;
+      padding: 5px 10px 5px 15px;
+    }
   }
 
   &__header-bottom {
@@ -40,21 +55,60 @@
   &__content {
     display: grid;
     gap: 50px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "img img saler saler"
+      "specific specific options options"
+      "desc desc desc desc"
+      "map map map map"
+      "bottom bottom bottom bottom";
+
+    @include tablet {
+      grid-template-areas:
+        "img img img saler"
+        "specific specific options options"
+        "desc desc desc desc"
+        "map map map map"
+        "bottom bottom bottom bottom";
+      gap: 25px;
+    }
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "img img"
+        "specific specific"
+        "options options"
+        "desc desc"
+        "saler saler"
+        "map map "
+        "bottom bottom";
+      gap: 30px;
+    }
   }
 
   &__img {
+    grid-area: img;
     height: 500px;
     background-color: var(--dark-grey);
   }
 
-  &__info {}
+  &__info {
+    grid-area: saler;
+  }
 
   &__info-wrapp {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: start;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
   }
 
   &__price-wrapp {
@@ -65,6 +119,10 @@
   &__price {
     font-size: 36px;
     font-weight: 700;
+
+    @include tablet {
+      font-size: 28px;
+    }
   }
 
   &__like {
@@ -83,23 +141,37 @@
     max-width: 150px;
   }
 
-  &__characteristic {}
+  &__specific {
+    grid-area: specific;
+  }
+
+  &__options {
+    grid-area: options;
+  }
 
   &__description {
-    grid-column: 1/span 2;
+    grid-area: desc;
   }
 
   &__map {
-    grid-column: 1/span 2;
+    grid-area: map;
     height: 350px;
     background-color: var(--dark-grey);
   }
 
   &__bottom {
-    grid-column: 1/span 2;
+    grid-area: bottom;
+
   }
 
-  &__list {}
+  &__list {
+    @include small-tablet {
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
 
   &__item {
     display: flex;
@@ -107,12 +179,29 @@
     &:not(:last-child) {
       margin-bottom: 10px;
     }
+
+    @include small-tablet {
+      flex-direction: column;
+
+      &:not(:last-child) {
+        margin-bottom: 0px;
+      }
+    }
   }
 
   &__key {
     flex-shrink: 0;
     width: 175px;
     margin-right: 20px;
+
+    @include tablet {
+      width: 125px;
+    }
+
+    @include small-tablet {
+      width: auto;
+      margin: 0;
+    }
   }
 
   &__value {
@@ -129,6 +218,7 @@
 }
 
 .icon {
+  flex-shrink: 0;
   width: 25px;
   height: 25px;
 

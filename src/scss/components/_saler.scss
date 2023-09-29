@@ -1,0 +1,185 @@
+.saler {
+  &__top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--dark);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: var(--accent);
+    }
+
+    @include tablet {
+      flex-direction: column-reverse;
+      gap: 10px;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__left {
+    display: flex;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+
+  &__photo {
+    flex-shrink: 0;
+    width: 78px;
+    height: 78px;
+    border-radius: 90px;
+    margin: 0 20px 0 0;
+  }
+
+  &__img {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__name {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__other {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__other-item {
+    color: var(--accent);
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+
+      &::before {
+        position: absolute;
+        content: "/";
+        top: 0;
+        right: -12px;
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    color: var(--light);
+    font-weight: 500;
+
+
+    @include tablet {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__phone {
+    border-radius: 8px;
+    max-width: 200px;
+    background-color: var(--accent);
+    padding: 10px 15px;
+    margin: 0 25px 0 0;
+
+    @include tablet {
+      margin: 0;
+    }
+
+    & svg {
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+      display: inline-flex;
+      padding: 5px;
+      margin: 0 0 0 30px;
+
+      @include tablet {
+        margin: 0;
+      }
+    }
+  }
+
+  &__number {
+    display: inline-block;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+
+  &__mail {
+    border-radius: 8px;
+    max-width: 170px;
+    background-color: var(--contrast);
+    padding: 10px 15px;
+
+    & svg {
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+      display: inline-flex;
+      padding: 5px;
+      margin: 0 0 0 30px;
+
+      @include tablet {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.star {
+  &__list {
+    display: flex;
+  }
+
+  &__list {
+    margin: 0 20px 0 0;
+  }
+
+  &__item {
+    display: inline-flex;
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  &__icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  &__count {
+    color: var(--accent);
+  }
+}
