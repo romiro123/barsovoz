@@ -34,6 +34,11 @@
       flex-direction: column;
       gap: 5px;
     }
+
+    @include small-tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   &__photo {
@@ -94,12 +99,14 @@
     display: flex;
     color: var(--light);
     font-weight: 500;
+    gap: 25px;
 
 
     @include tablet {
       flex-direction: column;
-      gap: 10px;
+      gap: 15px;
     }
+
   }
 
   &__phone {
@@ -107,11 +114,6 @@
     max-width: 200px;
     background-color: var(--accent);
     padding: 10px 15px;
-    margin: 0 25px 0 0;
-
-    @include tablet {
-      margin: 0;
-    }
 
     & svg {
       flex-shrink: 0;
@@ -120,8 +122,14 @@
       display: inline-flex;
       padding: 5px;
       margin: 0 0 0 30px;
+    }
 
-      @include tablet {
+    @include tablet {
+      max-width: 100%;
+      justify-content: center;
+      text-align: center;
+
+      & svg {
         margin: 0;
       }
     }
@@ -132,6 +140,10 @@
 
     @include tablet {
       display: none;
+    }
+
+    @include small-tablet {
+      display: block;
     }
   }
 
@@ -149,8 +161,14 @@
       display: inline-flex;
       padding: 5px;
       margin: 0 0 0 30px;
+    }
 
-      @include tablet {
+    @include tablet {
+      max-width: 100%;
+      justify-content: center;
+      text-align: center;
+
+      & svg {
         margin: 0;
       }
     }

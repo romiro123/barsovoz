@@ -109,6 +109,16 @@
       gap: 10px;
       margin-bottom: 25px;
     }
+
+    @include small-tablet {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    @include mobile {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
   }
 
   &__price-wrapp {
@@ -161,7 +171,9 @@
 
   &__bottom {
     grid-area: bottom;
-
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__list {
@@ -213,7 +225,6 @@
   &__bottom-link {
     border-radius: 8px;
     padding: 10px 20px;
-    margin-right: 10px;
   }
 }
 

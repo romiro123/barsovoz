@@ -668,6 +668,16 @@ p {
     gap: 5px;
   }
 }
+@media (max-width: 768px) {
+  .saler__left {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
 .saler__photo {
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -728,6 +738,7 @@ p {
   display: flex;
   color: var(--light);
   font-weight: 500;
+  gap: 25px;
 }
 @media (max-width: 1024px) {
   .saler__bottom {
@@ -735,7 +746,7 @@ p {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
   }
 }
 .saler__phone {
@@ -743,12 +754,6 @@ p {
   max-width: 200px;
   background-color: var(--accent);
   padding: 10px 15px;
-  margin: 0 25px 0 0;
-}
-@media (max-width: 1024px) {
-  .saler__phone {
-    margin: 0;
-  }
 }
 .saler__phone svg {
   -ms-flex-negative: 0;
@@ -762,6 +767,13 @@ p {
   margin: 0 0 0 30px;
 }
 @media (max-width: 1024px) {
+  .saler__phone {
+    max-width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
   .saler__phone svg {
     margin: 0;
   }
@@ -772,6 +784,11 @@ p {
 @media (max-width: 1024px) {
   .saler__number {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .saler__number {
+    display: block;
   }
 }
 .saler__mail {
@@ -792,6 +809,13 @@ p {
   margin: 0 0 0 30px;
 }
 @media (max-width: 1024px) {
+  .saler__mail {
+    max-width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
   .saler__mail svg {
     margin: 0;
   }
@@ -1422,6 +1446,24 @@ p {
     margin-bottom: 25px;
   }
 }
+@media (max-width: 768px) {
+  .product__info-wrapp {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .product__info-wrapp {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
 .product__price-wrapp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1491,6 +1533,12 @@ p {
   -ms-grid-column: 1;
   -ms-grid-column-span: 7;
   grid-area: bottom;
+  gap: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 @media (max-width: 1024px) {
   .product__img {
@@ -1620,7 +1668,6 @@ p {
 .product__bottom-link {
   border-radius: 8px;
   padding: 10px 20px;
-  margin-right: 10px;
 }
 
 .icon {
