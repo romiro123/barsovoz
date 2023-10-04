@@ -1,0 +1,39 @@
+.callback {
+  margin-bottom: 100px;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__right {
+    max-width: 300px;
+    margin: 0 auto;
+
+    @include tablet {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  &__description {
+    font-weight: 500;
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+
+    @include mobile {
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+
+    }
+  }
+}
