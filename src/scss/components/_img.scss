@@ -25,4 +25,16 @@
       height: 125px;
     }
   }
+
+  &--foto-user {
+    width: 150px;
+    height: 150px;
+    border-radius: 90px;
+  }
+
+  &--lk {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 }

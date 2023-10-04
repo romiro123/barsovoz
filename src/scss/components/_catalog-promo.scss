@@ -71,6 +71,10 @@
     width: 15px;
     height: 15px;
 
+    & use {
+      fill: var(--accent);
+    }
+
     @include mobile {
       display: none;
     }

@@ -37,6 +37,10 @@
   &__svg {
     width: 25px;
     height: 25px;
+
+    & use {
+      fill: var(--light);
+    }
   }
 
   &__info-wrapp {

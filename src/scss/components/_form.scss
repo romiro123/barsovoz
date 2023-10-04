@@ -7,22 +7,6 @@
       width: 100%;
     }
 
-    &__input {
-      width: 100%;
-      border-radius: 8px;
-      border: 1px solid var(--accent);
-      padding: 10px 0 10px 32px;
-
-      &::placeholder {
-        color: var(--dark-grey);
-        font-weight: 500;
-      }
-
-      @include mobile {
-        padding: 10px 0 10px 15px;
-      }
-    }
-
     &__btn {
       position: absolute;
       top: 0;
@@ -47,6 +31,86 @@
     &__btn-icon {
       width: 16px;
       height: 16px;
+
+      & use {
+        fill: var(--light);
+      }
     }
   }
+
+  &-foto {
+    &__top {
+      margin-bottom: 15px;
+    }
+
+    &__flex-wrapp {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    &__btn-wrapp {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__btn {
+      margin: 0 0 0 auto;
+    }
+  }
+
+  &-lk {
+    &__list {
+      margin-bottom: 30px;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__label {
+      font-weight: 500;
+      color: var(--dark);
+    }
+  }
+}
+
+
+.input {
+  border-radius: 8px;
+  color: var(--dark-grey);
+  font-weight: 500;
+
+  &--default {
+    border: 2px solid var(--dark-grey);
+    padding: 10px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &--search {
+    width: 100%;
+    border: 1px solid var(--accent);
+    padding: 10px 0 10px 32px;
+
+    &::placeholder {
+      color: var(--dark-grey);
+      font-weight: 500;
+    }
+
+    @include mobile {
+      padding: 10px 0 10px 15px;
+    }
+  }
+
 }

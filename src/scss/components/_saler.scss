@@ -122,6 +122,10 @@
       display: inline-flex;
       padding: 5px;
       margin: 0 0 0 30px;
+
+      & use {
+        fill: var(--light);
+      }
     }
 
     @include tablet {
@@ -161,6 +165,10 @@
       display: inline-flex;
       padding: 5px;
       margin: 0 0 0 30px;
+
+      & use {
+        fill: var(--light);
+      }
     }
 
     @include tablet {
@@ -190,11 +198,6 @@
     &:not(:last-child) {
       margin-right: 5px;
     }
-  }
-
-  &__icon {
-    width: 15px;
-    height: 15px;
   }
 
   &__count {

@@ -1,30 +1,7 @@
-.preview {
-  &__list {
-    display: grid;
+.card {
+  display: flex;
+  flex-direction: column;
 
-    &--big {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-
-      @include small-tablet {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    &--small {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-
-      @include tablet {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-  }
-
-  &__card {
-    display: flex;
-    flex-direction: column;
-  }
 
   &__img-wrapp {
     margin-bottom: 20px;
