@@ -11,11 +11,9 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_lk_nav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/lk-nav */ "./src/js/components/lk-nav.js");
 /* harmony import */ var _components_lk_nav__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_lk_nav__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_ex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/ex */ "./src/js/components/ex.js");
-/* harmony import */ var _components_ex__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_ex__WEBPACK_IMPORTED_MODULE_1__);
 console.log('components');
 
-
+// import './components/ex';
 
 /***/ }),
 
@@ -152,32 +150,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/js/components/ex.js":
-/*!*********************************!*\
-  !*** ./src/js/components/ex.js ***!
-  \*********************************/
-/***/ (() => {
-
-const filterBtn = document.querySelector('.filter__open-btn');
-const filter = document.querySelector('.filter');
-filterBtn.addEventListener('click', () => {
-  filter.classList.toggle('filter--open-js');
-});
-document.addEventListener('click', function (event) {
-  if (event.target.closest('.filter__open-btn') == null && event.target.closest('.filter') == null) {
-    filter.classList.remove('filter--open-js');
-  }
-});
-window.addEventListener('scroll', () => {
-  if (window.pageYOffset > 20) {
-    filter.classList.remove('filter--open-js');
-  }
-}, {
-  passive: true
-});
-
-/***/ }),
-
 /***/ "./src/js/components/lk-nav.js":
 /*!*************************************!*\
   !*** ./src/js/components/lk-nav.js ***!
@@ -185,7 +157,6 @@ window.addEventListener('scroll', () => {
 /***/ (() => {
 
 const navOpen = document.querySelector('.menu-nav__btn-open');
-// const navClose = document.querySelector('.lk-nav__btn-close');
 const nav = document.querySelector('.menu-nav');
 document.addEventListener('click', function (event) {
   if (event.target.closest('.menu-nav__btn-open')) {

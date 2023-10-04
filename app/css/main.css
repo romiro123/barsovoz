@@ -581,10 +581,15 @@ p {
 .form-foto__btn {
   margin: 0 0 0 auto;
 }
-.form-lk__list {
+.form__container {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: var(--main-dark);
+}
+.form__list {
   margin-bottom: 30px;
 }
-.form-lk__item {
+.form__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,10 +599,10 @@ p {
   flex-direction: column;
   gap: 15px;
 }
-.form-lk__item:not(:last-child) {
+.form__item:not(:last-child) {
   margin-bottom: 10px;
 }
-.form-lk__label {
+.form__label {
   font-weight: 500;
   color: var(--dark);
 }
@@ -1835,11 +1840,6 @@ p {
   .lk__form {
     max-width: 100%;
   }
-}
-.lk__form-content {
-  padding: 20px;
-  border-radius: 8px;
-  background-color: var(--main-dark);
 }
 .lk-product {
   margin-bottom: 100px;

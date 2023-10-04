@@ -61,26 +61,31 @@
     }
   }
 
-  &-lk {
-    &__list {
-      margin-bottom: 30px;
-    }
+  &__container {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--main-dark);
+  }
 
-    &__item {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+  &__list {
+    margin-bottom: 30px;
+  }
 
-      &:not(:last-child) {
-        margin-bottom: 10px;
-      }
-    }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 
-    &__label {
-      font-weight: 500;
-      color: var(--dark);
+    &:not(:last-child) {
+      margin-bottom: 10px;
     }
   }
+
+  &__label {
+    font-weight: 500;
+    color: var(--dark);
+  }
+
 }
 
 

@@ -1,5 +1,4 @@
 const navOpen = document.querySelector('.menu-nav__btn-open');
-// const navClose = document.querySelector('.lk-nav__btn-close');
 const nav = document.querySelector('.menu-nav');
 
 
