@@ -11,32 +11,11 @@
     }
   }
 
-  // &__left {
-  //   width: 255px;
-  //   flex-shrink: 0;
-
-  //   @include tablet {
-  //     width: 200px;
-  //   }
-  // }
-
   &__content {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-
-  // &__grid {
-  //   grid-template-columns: 255px auto;
-
-  //   @include small-tablet {
-  //     position: relative;
-  //     grid-template-columns: auto;
-  //   }
-  // }
-
-
-
 
   &__title {
     margin-bottom: 20px;

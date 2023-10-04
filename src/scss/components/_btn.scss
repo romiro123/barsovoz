@@ -4,14 +4,13 @@
     align-items: center;
   }
 
-  &--form {
-    display: block;
-    font-weight: 500;
-    color: var(--dark);
-    border: 2px solid var(--accent);
-    border-radius: 8px;
-    padding: 10px 20px;
+  &--accent {
+    background-color: var(--accent);
+    color: var(--light);
   }
 
+  &--center {
+    margin: 0 auto;
+  }
 
 }

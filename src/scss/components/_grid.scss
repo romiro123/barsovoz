@@ -4,6 +4,10 @@
 
   &--coll-2 {
     grid-template-columns: repeat(2, 1fr);
+
+    @include small-tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &--coll-3 {

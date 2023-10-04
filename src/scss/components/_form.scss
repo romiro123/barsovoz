@@ -86,6 +86,18 @@
     color: var(--dark);
   }
 
+  &__registration {
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    display: block;
+    font-weight: 500;
+    color: var(--dark);
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    padding: 10px 20px;
+  }
 }
 
 
@@ -93,6 +105,7 @@
   border-radius: 8px;
   color: var(--dark-grey);
   font-weight: 500;
+  background-color: transparent;
 
   &--default {
     border: 2px solid var(--dark-grey);

@@ -86,4 +86,28 @@
       fill: var(--accent);
     }
   }
+
+  &--sign-in {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+
+    & use {
+      fill: #1976D2;
+    }
+  }
+
+  &--registration {
+    width: 90px;
+    height: 90px;
+
+    @include small-tablet {
+      width: 50px;
+      height: 50px;
+    }
+
+    & use {
+      fill: var(--accent);
+    }
+  }
 }
